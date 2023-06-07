@@ -1,3 +1,5 @@
+/* common */
+
 body {
   box-sizing: border-box;
   color: #333;
@@ -10,6 +12,12 @@ body {
 img {
   display: block;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* header */
 
 header {
   background-color: royalblue;
@@ -26,8 +34,57 @@ header .inner {
 header .main-logo {
   height: 75px;
   margin: auto;
+  display: none;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
+}
+
+header .sub-menu {
+}
+
+header .sub-menu ul.menu {
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+header .sub-menu ul.menu li {
+  position: relative;
+}
+
+header .sub-menu ul.menu li::before {
+  width: 1px;
+  height: 12px;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: #e5e5e5;
+}
+
+header .sub-menu ul.menu li:first-child::before {
+  display: none;
+}
+
+header .sub-menu ul.menu li a {
+  padding: 11px 16px;
+  display: block;
+  font-size: 12px;
+  color: #656565;
+}
+
+header .sub-menu ul.menu li a:hover {
+  cursor: pointer;
+  color: #000;
+}
+
+header .sub-menu .search {
+}
+
+header .sub-menu .search input {
+}
+
+header .sub-menu .search .material-icons {
 }
