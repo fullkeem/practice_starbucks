@@ -20,7 +20,8 @@ a {
 /* header */
 
 header {
-  background-color: royalblue;
+  background-color: #f6f5f0;
+  border-bottom: 1px solid #c8c8c8;
 }
 
 header .inner {
@@ -28,13 +29,11 @@ header .inner {
   height: 120px;
   margin: 0 auto;
   position: relative;
-  background-color: orange;
 }
 
 header .main-logo {
   height: 75px;
   margin: auto;
-  display: none;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -42,7 +41,10 @@ header .main-logo {
 }
 
 header .sub-menu {
+  position: absolute;
   display: flex;
+  top: 10px;
+  right: 0;
 }
 
 header .sub-menu ul.menu {
@@ -87,8 +89,8 @@ header .sub-menu .search {
 }
 
 header .sub-menu .search input {
-  width: 36px;
-  height: 34px;
+  width: 24px;
+  height: 24px;
   padding: 4px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -109,6 +111,11 @@ header .sub-menu .search .material-icons {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 5px;
+  right: 10px;
   margin: auto;
+  transition: 0.4s;
+}
+
+header .sub-menu .search.focused .material-icons {
+  opacity: 0;
 }
