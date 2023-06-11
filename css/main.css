@@ -17,6 +17,12 @@ a {
   text-decoration: none;
 }
 
+.inner {
+  width: 1100px;
+  position: relative;
+  margin: 0 auto;
+}
+
 /* header */
 
 header {
@@ -24,11 +30,8 @@ header {
   border-bottom: 1px solid #c8c8c8;
 }
 
-header .inner {
-  width: 1100px;
+header > .inner {
   height: 120px;
-  margin: 0 auto;
-  position: relative;
 }
 
 /* logo */
@@ -151,10 +154,60 @@ header ul.main-menu .category:hover .category__name {
 }
 
 header ul.main-menu .category .category__contents {
+  position: fixed;
+  display: none;
+  width: 100%;
+  left: 0;
+}
+
+header ul.main-menu .category:hover .category__contents {
+  display: block;
 }
 
 header ul.main-menu .category .category__contents .contents__menu {
+  height: 100px;
+  background-color: cornflowerblue;
+}
+
+header ul.main-menu .category .category__contents .contents__menu .inner {
+  display: flex;
+  padding: 20px 0;
+}
+
+header ul.main-menu .category .category__contents .contents__menu .inner > li {
+  width: 220px;
+}
+
+header
+  ul.main-menu
+  .category
+  .category__contents
+  .contents__menu
+  .inner
+  > li
+  > h3 {
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #fff;
+}
+
+header
+  ul.main-menu
+  .category
+  .category__contents
+  .contents__menu
+  .inner
+  > li
+  > h3
+  > ul
+  > li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
 }
 
 header ul.main-menu .category .category__contents .contents__texture {
+  height: 50px;
+  background-color: cadetblue;
 }
