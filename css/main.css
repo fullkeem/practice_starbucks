@@ -332,10 +332,19 @@ header .badges .badge {
   font-weight: 700;
 }
 
-.notice .notice-line .inner .inner__left .swiper-container {
+.notice .notice-line .inner .inner__left .swiper {
   height: 65px;
-  background-color: orange;
   flex-grow: 1;
+}
+
+.notice .notice-line .inner .inner__left .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  height: 65px;
+}
+
+.notice .notice-line .inner .inner__left .swiper .swiper-slide a {
+  color: #fff;
 }
 
 .notice .notice-line .inner .inner__left .notice-line__more {
