@@ -117,9 +117,6 @@ header ul.main-menu {
   z-index: 1;
 }
 
-header ul.main-menu .category {
-}
-
 header ul.main-menu .category .category__name {
   padding: 10px 20px 34px 20px;
   font-family: Arial, sans-serif;
@@ -287,9 +284,6 @@ header .badges .badge {
 
 /* NOTICE */
 
-.notice {
-}
-
 .notice .notice-line {
   position: relative;
 }
@@ -384,4 +378,37 @@ header .badges .badge {
 
 .notice .notice-line .inner .inner__right .material-icons {
   font-size: 32px;
+}
+
+.notice .promotion {
+  position: relative;
+  height: 693px;
+  background-color: #f6f5ef;
+}
+
+.notice .promotion .swiper {
+  position: absolute;
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  top: 40px;
+  left: 50%;
+  margin-left: calc((819px * 3 + 20px) / -2);
+}
+
+.notice .promotion .swiper-slide {
+  position: relative;
+  opacity: 0.5;
+  transition: opacity 1s;
+}
+
+.notice .promotion .swiper-slide-active {
+  opacity: 1;
+}
+
+.notice .promotion .swiper-slide .btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
