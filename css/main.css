@@ -772,6 +772,12 @@ header .badges .badge {
   margin-bottom: 20px;
 }
 
+.find-store .more {
+  position: absolute;
+  bottom: 80px;
+  left: 550px;
+}
+
 /* AWARDS */
 
 .awards {
